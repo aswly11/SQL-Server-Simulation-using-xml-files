@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B42B6960-F5D9-4E86-A6F1-C03DE3FF2A56}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication9</RootNamespace>
+    <AssemblyName>WindowsFormsApplication9</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cols.cs" />
+    <Compile Include="constraints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="constraints.Designer.cs">
+      <DependentUpon>constraints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="databaseContent.cs" />
+    <Compile Include="DataBaseName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBaseName.Designer.cs">
+      <DependentUpon>DataBaseName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display_EditTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display_EditTable.Designer.cs">
+      <DependentUpon>Display_EditTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loading.Designer.cs">
+      <DependentUpon>loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Create Table.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Create Table.Designer.cs">
+      <DependentUpon>Create Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relations.Designer.cs">
+      <DependentUpon>Relations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ROW.cs" />
+    <Compile Include="table.cs" />
+    <Compile Include="tableNameRecive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tableNameRecive.Designer.cs">
+      <DependentUpon>tableNameRecive.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="constraints.resx">
+      <DependentUpon>constraints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBaseName.resx">
+      <DependentUpon>DataBaseName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display_EditTable.resx">
+      <DependentUpon>Display_EditTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loading.resx">
+      <DependentUpon>loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Create Table.resx">
+      <DependentUpon>Create Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relations.resx">
+      <DependentUpon>Relations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tableNameRecive.resx">
+      <DependentUpon>tableNameRecive.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-action-art-262831.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_The_Flash_Sign_50px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Cancel_48px_1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
